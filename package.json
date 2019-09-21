@@ -8,5 +8,16 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nowarzz/react-native-android-istablet.git"
+  },
+  "keywords": ["React Native", "Tablet"],
+  "author": "Willy Martin (lucky.nowarzz@gmail.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/nowarzz/react-native-android-istablet.git",
+  "bugs": {
+    "url": "https://github.com/nowarzz/react-native-android-istablet/issues"
   }
 }
