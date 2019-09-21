@@ -1,0 +1,12 @@
+{
+  "name": "react-native-android-istablet",
+  "version": "1.0.0",
+  "description": "Determine isTablet",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}
