@@ -8,14 +8,19 @@ const gcd = (a, b) => {
 };
 
 const isTablet = () => {
-  let pixelDensity = PixelRatio.get();
-  let width = Dimensions.get("window").width;
-  let height = Dimensions.get("window").height;
+  const pixelDensity = PixelRatio.get();
+  const width = Dimensions.get("window").width;
+  const height = Dimensions.get("window").height;
   const adjustedWidth = width * pixelDensity;
   const adjustedHeight = height * pixelDensity;
-  const ratioDivider = gcd(width,height);
-  const wRatio = width / ratioDivider;
-  const hRatio = height / ratioDivider;
+  const swidth = Dimensions.get("screen").width;
+  const sheight = Dimensions.get("screen").height;
+  const sadjustedWidth = swidth * pixelDensity;
+  const sadjustedHeight = sheight * pixelDensity;
+  const ratioDivider = gcd(sadjustedWidth, sadjustedHeight);
+  const wRatio = sadjustedWidth / ratioDivider;
+  const hRatio = sadjustedHeight / ratioDivider;
+
   if (wRatio === 9 && hRatio === 20) {
     return false;
   }
